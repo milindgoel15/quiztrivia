@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import UserContext from "../../contexts/userContext";
+import UserContext from "../../contexts/UserContext";
 import QuestionLayout from "../layouts/QuestionLayout";
 import {Triangle} from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";

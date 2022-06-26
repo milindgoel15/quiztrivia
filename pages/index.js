@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Main from '../components/sections/Main'
 import Quiz from '../components/sections/Quiz';
-import UserContext from '../contexts/userContext';
+import UserContext from '../contexts/UserContext';
 import axios from "axios";
 
 export default function Home() {
