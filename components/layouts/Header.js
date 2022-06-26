@@ -13,6 +13,10 @@ let Header = () => {
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="keywords" content="Milind Goel, milindgoel15, Web Developer" />
+            <title>Quiz Trivia</title>
+            <meta name="description" content="Quiz Trivia app using Trivia JSON API" />
+
+            {/* favicons */}
             <link rel="apple-touch-icon" sizes="180x180" href="f/avicons/apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
@@ -20,8 +24,22 @@ let Header = () => {
             <link rel="icon" type="image/png" sizes="512x512" href="/favicons/android-chrome-512x512.png" />
             <link rel="manifest" href="/favicons/site.webmanifest" />
 
-            <title>Quiz App</title>
-            <meta name="description" content="Quiz app using Trivia API" />
+            {/* open graph / facebook meta tags */}
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Quiz Trivia" />
+            <meta property="og:description" content="Quiz Trivia app using Trivia JSON API" />
+            <meta property="og:url" content="https://quiztrivia.vercel.app" />
+            <meta property="og:image" content="https://github.com/milindgoel15/quiztrivia/blob/main/public/favicons/apple-touch-icon.png" />
+
+            {/* twitter meta tags */}
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content="https://quiztrivia.vercel.app/" />
+            <meta property="twitter:title" content="Quiz Trivia" />
+            <meta property="twitter:description" content="Quiz Trivia app using Trivia JSON API" />
+            <meta property="twitter:image" content="https://github.com/milindgoel15/quiztrivia/blob/main/public/favicons/apple-touch-icon.png" />
+
+            {/* google site verification */}
+            <meta name="google-site-verification" content="2tG9JnOT3BhG1wK6wvHuYbfJqzXu1D3aosqBoAMYHIA" />
 
          </Head>
          <header className="mx-10 flex justify-between py-8 dark:text-white ">
