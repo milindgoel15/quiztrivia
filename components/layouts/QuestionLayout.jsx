@@ -43,6 +43,9 @@ let QuestionLayout = ({
       setSelected();
     } else {
       setError("Please select an option first");
+      setTimeout(() => {
+        setError("");
+      }, 1000);
     }
   };
 

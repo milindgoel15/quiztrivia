@@ -25,7 +25,7 @@ let Results = ({ name, score, setQuiz }) => {
         </button>
       </section>
 
-      {score > 1 && <Confetti width={width / 1.2} height={height} recycle={true} numberOfPieces={80} style={{overflowX: "hidden"}} />}
+      {score > 6 && <Confetti width={width / 1.2} height={height} recycle={false} numberOfPieces={80} />}
     </>
   );
 };
