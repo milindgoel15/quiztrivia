@@ -1,4 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center"> A short simple Quiz Trivia project based on <a href="https://opentdb.com/">Trivia API</a>. </p>
+
+<p align="center">Built with love by <a href="https://github.com/milindgoel15">Milind Goel</a>
+</p>
+
+<h3 align="center">Tech used:</h3>
+<div align="center">
+   <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
+   <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white">
+</div>
+
+---
 
 ## Getting Started
 
