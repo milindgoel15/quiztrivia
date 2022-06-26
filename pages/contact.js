@@ -6,12 +6,12 @@ let Contact = () => {
    return (
       <>
          <Head>
-            <title>Let's Connect!</title>
+            <title>Let&apos;s Connect!</title>
             <meta name="description" content="Quiz app using Trivia API" />
          </Head>
          <main className="flex flex-col items-center gap-10 bg-white dark:bg-secondary dark:text-white rounded-lg shadow-lg justify-center text-center px-5 py-16 md:py-20 my-24 mx-10 md:mx-20">
             <section className=" font-medium text-xl md:text-3xl">
-               <h1>Want to connect? Let's get in touch!</h1>
+               <h1>Want to connect? Let&apos;s get in touch!</h1>
             </section>
 
             <section className="flex flex-col sm:flex-row gap-4 md:gap-10">

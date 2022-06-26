@@ -9,7 +9,7 @@ let Results = ({ name, score, setQuiz }) => {
       <section className="flex flex-col items-center gap-10 bg-white dark:bg-secondary dark:text-white rounded-lg shadow-lg mx-10 md:mx-20 justify-center text-center my-24 py-16 ">
         {name ? (
           <h2 className="text-3xl md:text-4xl">
-            <span className="font-semibold">{name}'s</span> result card
+            <span className="font-semibold">{name}&apos;s</span> result card
           </h2>
         ) : (
           <h2 className="text-3xl md:text-4xl">Your result card</h2>
