@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   --background: #14161a;
+   --accent-color: rgb(13, 115, 231);
+   --hover-accent-color: #1361b9;
+}
+
+@layer base {
+   @font-face {
+      font-family: 'axiforma';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/fonts/axiforma.woff') format('woff'), url('/fonts/axiforma.woff2') format('woff2');
+   }
+
+   html {
+      @apply font-axiforma bg-slate-200 dark:bg-background
+   }
+
+   body {
+      @apply scroll-smooth
+   }
+
+   ::-webkit-scrollbar {
+      @apply bg-slate-200 dark:bg-background
+   }
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+   width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--accent-color);
+   border-radius: 8px;
+   border: 4px solid transparent;
+   background-clip: content-box;
+
+   &:hover {
+       background: var(--hover-accent-color);
+       border-radius: 8px;
+       border: 4px solid transparent;
+       background-clip: content-box;
+   }
+}
+
+html {
+   scrollbar-width: thin;
+   scrollbar-color: var(--accent-color) var(--background);
+}
+/* custom scrollbar */

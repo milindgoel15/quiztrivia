@@ -1,17 +1,42 @@
 {
-  "name": "quizapp",
-  "version": "0.1.0",
+  "name": "quiztriviaapp",
+  "version": "1.0",
+  "description": "Quiz Trivia based on Trivia API built with Next.js & TailwindCSS, hosted on Vercel",
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "Milind Goel, Web Developer, MilindGoel15, milindgoel.vercel.app, Quiz app, Trivia Api"
+  ],
+  "author": {
+    "name": "Milind Goel",
+    "email": "milindgoel15@gmail.com",
+    "url": "https://github.com/milindgoel15"
+  },
+  "license": "AGPL",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next build && next-sitemap --config nextSitemap.js",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "axios": "^0.27.2",
+    "he": "^1.2.0",
     "next": "12.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next-sitemap": "^3.1.6",
+    "postcss": "^8.4.14",
+    "react": "18.2",
+    "react-confetti": "^6.1.0",
+    "react-dom": "18.2",
+    "react-loader-spinner": "^5.1.5",
+    "react-use": "^17.4.0",
+    "sass": "^1.52.3",
+    "tailwindcss": "^3.1.4"
   },
   "devDependencies": {
     "eslint": "8.18.0",
