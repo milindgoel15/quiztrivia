@@ -23,5 +23,3 @@ function Main({ getQuestions }) {
 }
 
 export default Main;
-
-

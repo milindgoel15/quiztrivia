@@ -47,7 +47,7 @@ let Header = () => {
                <a onClick={() => setNavOpen(false)} className="text-3xl z-[2] font-semibold transition-all hover:text-blue-500"> Quiz trivia </a>
             </Link>
 
-            <button onClick={() => setNavOpen(!isNavOpen)} className="md:hidden z-[2] " >
+            <button onClick={() => setNavOpen(!isNavOpen)} className="md:hidden z-[2]" aria-label="Hamburger menu" >
                <Hamburger />
             </button>
             <nav onClick={() => setNavOpen(false)} className={`flex z-[1] gap-5 flex-col absolute md:static w-full md:w-fit bg-slate-200 dark:bg-background backdrop-blur py-8 md:py-0 left-0 transition-all ease-in duration-500 md:flex-row items-center ${isNavOpen ? 'top-[95px]' : 'top-[-400px]'} `}>
