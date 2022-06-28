@@ -1,6 +1,6 @@
-import Mail from "../components/elements/Mail";
-import Web from "../components/elements/Web";
 import Head from "next/head";
+import ContactCard from "../components/layouts/ContactCard"
+import ContactData from "../utils/ContactData";
 
 let Contact = () => {
    return (
@@ -15,19 +15,16 @@ let Contact = () => {
             </section>
 
             <section className="flex flex-col sm:flex-row gap-4 md:gap-10">
-               <a href="mailto:milindgoel15@gmail.com" target="_blank" rel="noopener noreferrer">
-                  <button className="flex items-center gap-4 rounded-md text-white md:text-lg bg-blue-500 transition-all hover:bg-blue-700 w-full my-4 py-4 md:py-5 px-5 md:px-10">
-                     <Mail />
-                     Email
-                  </button>
-               </a>
-
-               <a href="https://milindgoel.vercel.app" target="_blank" rel="noopener noreferrer">
-                  <button className="flex items-center gap-4 rounded-md text-white md:text-lg bg-blue-500 transition-all hover:bg-blue-700 w-full my-4 py-4 md:py-5 px-5 md:px-10">
-                     <Web />
-                     Website
-                  </button>
-               </a>
+               {
+                  ContactData.map(props => (
+                     <ContactCard 
+                        key={props.id}
+                        title={props.title}
+                        link={props.link}
+                        icon={props.icon}
+                     />
+                  ))
+               }
             </section>
          </main>
       </>
